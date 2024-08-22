@@ -37,6 +37,7 @@ const SignUp = () => {
   return (
     <div style={{border:"1px solid grey",padding:"20px",borderRadius:"10px"}}>
       <h2 style={{textAlign:"center"}}>Sign Up</h2>
+      
       <form onSubmit={handleSignUp}>
         <input
           type="email"
@@ -69,3 +70,4 @@ const SignUp = () => {
 };
 
 export default SignUp;
+
