@@ -4,7 +4,7 @@ import { auth, provider } from '../service/Firebase'
 import { signInWithPopup } from 'firebase/auth'
 const Login = () => {
   const handlelogin=()=>{
-    // alert("hello")
+    
     signInWithPopup(auth,provider)
     .then((res)=>{
       console.log(res)
