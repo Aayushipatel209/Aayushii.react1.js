@@ -1,8 +1,8 @@
-import {reducer as Counterreducer} from "./counter/reducer";
+import { combineReducers, legacy_createStore } from "redux";
+import {reducer as counterreducer} from "../redux/counter/reducer"
 
 
 
 
-
-const rootreducer=combineReducers({Counterreducer})
-export const store = legacy_createStore(rootreducer);
+const rootreducer=combineReducers({ counterreducer})
+export const store = legacy_createStore(rootreducer)
