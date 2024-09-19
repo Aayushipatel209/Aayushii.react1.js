@@ -1,24 +1,14 @@
 import React from 'react'
-import { useDispatch } from 'react-redux';
-import { decrementfunction, incrementfunction } from '../redux/counter/action';
+import { useDispatch, useSelector } from 'react-redux'
+import { Decrementfunction, Incrementfunction } from '../redux/action'
 
 const CounterButtons = () => {
+  const {counter}=useSelector((store)=>store.counterReducer)
     const dispatch=useDispatch()
-    const handleincrement = () => {
-       dispatch(incrementfunction())
-    };
-    const handledecrement = () => {
-       dispatch(decrementfunction())
-    };
-  
-    
   return (
     <div>
-       <div className="btn" style={{marginLeft:"22%",width:"550px"}}>
-       <button onClick={handleincrement} style={{padding:"15px 20px",width:"140px",fontSize:"20px"}}>Add</button>
-       <button onClick={handledecrement} style={{padding:"15px 20px",width:"140px",fontSize:"20px"}}>reduce</button>
-       </div>
-      
+      <button style={{padding:"10px 30px"}} onClick={()=>dispatch(Incrementfunction())}>Add</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button style={{padding:"10px 30px"}} onClick={()=>dispatch(Decrementfunction())} disabled={counter==0}>Reducer</button>
     </div>
   )
 }

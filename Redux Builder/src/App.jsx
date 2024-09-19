@@ -1,19 +1,16 @@
-
-import './App.css'
+import React from 'react'
 import Counter from './components/Counter'
-import CounterButtons from './components/CounterButtons'
-import Countervalue from './components/Countervalue'
+import './App.css'
+import Theme from './components/Theme'
 
-function App() {
+
+const App = () => {
 
   return (
-    <>
-       <div style={{height:"550px",width:"550px",backgroundColor:'aqua',margin:"auto"}}>
-       <Counter/>
-       <Countervalue/>
-       <CounterButtons/>
-       </div>
-    </>
+    <div>
+      <Theme />
+      <Counter />
+    </div>
   )
 }
 
