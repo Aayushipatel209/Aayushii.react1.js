@@ -5,10 +5,10 @@ function ProductsTable({data}){
             <table border="1px" style={{width:"50%"}}>
                 <thead>
                     <tr>
-                        <th style={{padding:"10px 5px",backgroundColor:"darkgreen",color:"white"}}>Sno</th>
-                        <th style={{padding:"10px 5px",backgroundColor:"darkgreen",color:"white"}}>Brand</th>
-                        <th style={{padding:"10px 5px",backgroundColor:"darkgreen",color:"white"}}>Category</th>
-                        <th style={{padding:"10px 5px",backgroundColor:"darkgreen",color:"white"}}>Price</th>
+                        <th style={{padding:"10px 5px",backgroundColor:"black",color:"white"}}>Sno</th>
+                        <th style={{padding:"10px 5px",backgroundColor:"black",color:"white"}}>Brand</th>
+                        <th style={{padding:"10px 5px",backgroundColor:"black",color:"white"}}>Category</th>
+                        <th style={{padding:"10px 5px",backgroundColor:"black",color:"white"}}>Price</th>
                     </tr>
                 </thead>
                 <tbody>

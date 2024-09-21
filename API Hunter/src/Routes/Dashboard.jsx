@@ -36,7 +36,7 @@ function Dashboard() {
         </p>
       </div>
       <div>
-      <button data-testid="logout-btn" onClick={logoutUser} style={{backgroundColor:"darkgreen",border:"none",borderRadius:"5px",padding:"10px 15px",color:"white"}}>Logout</button>
+      <button data-testid="logout-btn" onClick={logoutUser} style={{backgroundColor:"black",border:"none",padding:"10px 15px",color:"white"}}>Logout</button>
       </div>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>

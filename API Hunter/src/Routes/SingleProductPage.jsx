@@ -23,7 +23,7 @@ function SingleProductPage(){
   },[])
 
     return loading ? <Loader /> :(
-        <div data-testid="products-container" style={{boxShadow:"10px 10px 30px grey",width:"50%",padding:"20px",margin:"auto",marginTop:"5%",borderRadius:"10px"}}>   
+        <div data-testid="products-container" style={{width:"50%",padding:"20px",margin:"auto",marginTop:"5%"}}>   
             <div>
                 <h3 data-testid="product-brand">{product.brand}</h3>
             </div>

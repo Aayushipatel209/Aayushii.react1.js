@@ -33,7 +33,7 @@ function Login() {
 
   return (
     <div>
-      <form data-testid="login-form" onSubmit={handlesubmit} style={{boxShadow:"10px 10px 20px grey",width:"18%",padding:"20px",margin:"auto",borderRadius:"10px",marginTop:"10%"}}>
+      <form data-testid="login-form" onSubmit={handlesubmit} style={{width:"18%",padding:"20px",margin:"auto",marginTop:"10%"}}>
         <div>
           <label>
             
@@ -53,7 +53,7 @@ function Login() {
           </label>
         </div><br></br>
         <div>
-          <input data-testid="form-submit" type="submit" style={{backgroundColor:"darkgreen",color:"white",padding:"10px 113px 10px 112px",border:"none"}} value="SUBMIT" />
+          <input data-testid="form-submit" type="submit" style={{backgroundColor:"black",color:"white",padding:"10px 113px 10px 112px",border:"none"}} value="SUBMIT" />
         </div>
        
       </form>

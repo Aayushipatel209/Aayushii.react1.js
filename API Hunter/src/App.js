@@ -1,5 +1,5 @@
 import AllRoutes from "./Routes/AllRoutes";
-import Home from "./Routes/Home";
+
 import "./styles.css";
 
 export default function App() {
@@ -11,5 +11,3 @@ export default function App() {
   );
 }
 
-// authentication: reqres.in
-//
